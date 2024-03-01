@@ -1,0 +1,27 @@
+[[entries]]
+title = "介绍"
+  [[entries.entries]]
+  title = "打工人..."
+  [[entries.entries]]
+  title = "Github"
+  url = "https://github.com/yf4n"
+
+[[entries]]
+title = "菜单"
+    [[entries.entries]]
+    title = "分类"
+    url = "/categories"
+    [[entries.entries]]
+    title = "标签"
+    url = "/tags"
+    [[entries.entries]]
+    title = "订阅RSS"
+    url = "index.xml"
+
+[[entries]]
+title = "文章列表"
+  [entries.post_list]
+  limit = 5
+  show_more = true
+  show_more_text = "更多..."
+  show_more_url = "posts"
