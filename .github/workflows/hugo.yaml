@@ -33,6 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.123.0
+      GITTALK_SECRET: ${{ secrets.GITTALK_SECRET }}
     steps:
       - name: Install Hugo CLI
         run: |
@@ -50,6 +51,8 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: "Replace Variable"
+        run: "sed -i \"s/{{GITTALK_SECRET}}/$GITTALK_SECRET/g\" ./hugo.toml"
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules

@@ -792,7 +792,7 @@ enableEmoji = true
       Mix = false
     # FixIt 0.2.15 | CHANGED Comment config
     [params.page.comment]
-      enable = false
+      enable = true
       # FixIt 0.2.13 | NEW Artalk comment config (https://artalk.js.org/)
       [params.page.comment.artalk]
         enable = false
@@ -824,11 +824,11 @@ enableEmoji = true
         shortname = ""
       # Gitalk comment config (https://github.com/gitalk/gitalk)
       [params.page.comment.gitalk]
-        enable = false
-        owner = ""
-        repo = ""
-        clientId = ""
-        clientSecret = ""
+        enable = true
+        owner = "yf4n"
+        repo = "yf4n.github.io"
+        clientId = "Ov23liQqYnVcRx76hUJm"
+        clientSecret = "{{GITTALK_SECRET}}"
       # Valine comment config (https://github.com/xCss/Valine)
       [params.page.comment.valine]
         enable = false
